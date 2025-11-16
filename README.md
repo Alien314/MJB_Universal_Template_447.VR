@@ -9,11 +9,11 @@
 # Modifying the Arsenal:
 Go to initplayerlocal.sqf, comment the top two uncommented lines and uncomment the `0 = execVM 'loadouts\arsenal.sqf';` line.
 To make changes to the arsenal, use the `arsenal.sqf` file in the loadouts folder and add/remove desired equipment.
-Scroll to the bottom to view what roles have which equipment blocks, preferably with an IDE to make searching through it less of a headache.
+Scroll to the bottom to view what roles have which equipment blocks, preferably with an IDE to make searching through it less of a headache.<br />
 SQF highlighting for Notepad++: https://github.com/DannyDorito/npp-sqf
 
 # Modifying starting loadouts:
-Uncomment the relevant line(s) in `description.ext`, otherwise the loadouts from retroactive arsenal(mjb arma v2) will be used. Then access the `player_loadout.hpp` file in the loadouts folder and search for your role based off the names in the mission editor. 
+Uncomment the relevant line(s) in `description.ext`, otherwise the loadouts from retroactive arsenal(mjb arma v2) will be used. Then access the `player_loadout.hpp` file in the loadouts folder and search for your role based off the names in the mission editor.<br /> 
 `description.ext` and .hpp files use C++ syntax. (Language -> C -> C++, in Notepad++)
 
 # Existing Missions/Merging
