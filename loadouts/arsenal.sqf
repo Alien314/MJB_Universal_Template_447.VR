@@ -82,7 +82,7 @@ private _aceMedLoaded = !(isNil "ace_medical_engine"); //Store whether ace med i
 private _winter = false; // true to enable winter camo
 private _enableCBRN = false; // true to enable CBRN
 
-private _rejoincheck = player getVariable "startpos";
+private _rejoincheck = player getVariable ["startpos",nil];
 if (isNil "_rejoincheck") then {
     player setVariable ["startpos", getPosASL player, true];};
 
@@ -884,6 +884,7 @@ private _itemWeaponRifle =
     //============================================================
     "CUP_arifle_DSA_SA58_OSW_VFG",
 	"CUP_arifle_Mk17_CQC",
+    "CUP_arifle_G3A3_modern_ris",
 
     "rhs_weap_mk17_CQC",
     "rhs_weap_l1a1_wood"
@@ -993,6 +994,7 @@ private _itemWeaponAmmo =
     "CUP_20Rnd_762x51_FNFAL_M",
     "CUP_20Rnd_762x51_B_SCAR",
     "CUP_20Rnd_762x51_HK417",
+    "CUP_20Rnd_762x51_G3",
 
     //Loose ammo
     "greenmag_ammo_762x51_basic_60Rnd",
@@ -1057,7 +1059,8 @@ private _itemWeaponTracerAmmo =
     //============================================================
     "CUP_20Rnd_TE1_Yellow_Tracer_762x51_FNFAL_M",
     "CUP_20Rnd_TE1_Yellow_Tracer_762x51_SCAR",
-    "CUP_20Rnd_TE1_Yellow_Tracer_762x51_HK417"
+    "CUP_20Rnd_TE1_Yellow_Tracer_762x51_HK417",
+    "CUP_20Rnd_TE1_Yellow_Tracer_762x51_G3"
 
     //============================================================
     //7.62x54mm
@@ -1115,8 +1118,8 @@ private _itemWeaponCQB =
     "CUP_smg_SA61",
     "CUP_smg_vityaz_vfg_top_rail",
     "CUP_smg_bizon",
+    "CUP_smg_MP7",
 
-	"CUP_smg_MP7",
     "rhs_weap_pp2000",
     "rhsusf_weap_MP7A2",
 
