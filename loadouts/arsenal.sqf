@@ -232,7 +232,12 @@ private _itemEquipment =
     //"diw_armor_plates_main_plate",
 
     //Greenmag speedloader
-    "greenmag_item_speedloader"
+    "greenmag_item_speedloader",
+
+    // Ctab
+    "ItemcTabHCam",
+    "ItemMicroDAGR",
+    "ItemMicroDAGRMisc"
 ];
 
 private _itemHats = [
@@ -799,6 +804,11 @@ private _itemLeaderEquipment =
 
     //Cute attachments for leaders
     "tier1_agency_compensator",
+
+    // Ctab
+    "ItemcTabMisc",
+    "ItemAndroidMisc",
+    "ItemMicroDAGRMisc",
 
     "greenmag_ammo_50AE_ball_30Rnd", // deagle rounds
 
@@ -1882,6 +1892,12 @@ private _itemTankCrew =
     "Toolkit",
     "ACE_MapTools",
     "ACE_microDAGR",
+
+    // Ctab
+    "ItemcTabHCam",
+    "ItemMicroDAGR",
+    "ItemMicroDAGRMisc",
+
     "rhsgref_6b23_khaki",
     "B_AssaultPack_rgr",
     "B_AssaultPack_cbr",
@@ -1957,6 +1973,13 @@ private _itemHeloCrew =
     "Toolkit",
     "ACE_MapTools",
     "ACE_microDAGR",
+
+    // Ctab
+    "ItemcTabHCam",
+    "ItemAndroidMisc",
+    "ItemMicroDAGR",
+    "ItemMicroDAGRMisc",
+
     "G_Bandanna_aviator",
     "rhsusf_mbav_light",
     "B_AssaultPack_rgr",
@@ -1994,6 +2017,13 @@ private _itemAirCrew =
     "ItemWatch",
     "ACE_MapTools",
     "ACE_microDAGR",
+
+    // Ctab
+    "ItemcTabHCam",
+    "ItemAndroidMisc",
+    "ItemMicroDAGR",
+    "ItemMicroDAGRMisc",
+
     "G_Bandanna_aviator",
 	"rhs_zsh7a_alt",
 	"rhs_zsh7a",
