@@ -88,6 +88,29 @@ class CfgDebriefingSections
 };
 //#endif
 
+class Extended_InitPost_EventHandlers
+{
+    /*/ Copy below block for each unit class in your group compositions.
+    class CUP_B_USMC_Soldier { // class to add role to, (typeOf unit)
+        class varInit {
+            // gear assignment, third argument is the role to add
+            init = "if !(isServer) exitWith {}; [_this select 0, 'xENEMY_LOADOUT', 'r'] call tmf_assigngear_fnc_assigngear;"; 
+        };
+    };//*/
+};
+
+class Params
+{
+  /*/ Time of Day
+  class time
+  {
+    title = "Time of Day (Default: Noon)";
+    texts[] = {"Random", "Dawn", "Morning", "Noon", "Afternoon", "Dusk", "Midnight"};
+    values[] = {0,1,2,3,4,5,6};
+    default = 3;
+  };//*/
+};
+
 /*/ Moved to MJB ARMA V2, can be altered here
 class ACEX_Fortify_Presets {
 	class rats {
