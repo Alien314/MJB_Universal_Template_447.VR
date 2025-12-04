@@ -304,6 +304,11 @@ class aar : r
 class mmg : ar
 {
 	displayName = "MMG Gunner";
+	items[] += {
+		#if __has_include("\ctab\script_component.hpp")
+			"ItemAndroidMisc"
+		#endif
+	};
 	primaryWeapon[] =
 	{
 		"CUP_lmg_Mk48"
@@ -366,6 +371,11 @@ class ammg : aar
 class sniper : basetrooper
 {
 	displayName = "Sniper";
+	items[] += {
+		#if __has_include("\ctab\script_component.hpp")
+			"ItemAndroidMisc"
+		#endif
+	};
 	primaryWeapon[] =
 	{
 		"CUP_srifle_M107_Pristine"
@@ -427,6 +437,11 @@ class tl : r
 		"CUP_acc_llm_black"
 	};
 	bipod[] = {};
+	items[] += {
+		#if __has_include("\ctab\script_component.hpp")
+			"ItemAndroidMisc"
+		#endif
+	};
 	magazines[] = {
 		LIST_2("ACE_M84"),
 		LIST_2("greenmag_ammo_556x45_basic_60Rnd"),
@@ -534,6 +549,11 @@ class lat : r
 class mat : r
 {
 	displayName = "Antitank Trooper";
+	items[] += {
+		#if __has_include("\ctab\script_component.hpp")
+			"ItemAndroidMisc"
+		#endif
+	};
 	secondaryWeapon[] = {
 		"launch_MRAWS_green_F"
 	};
@@ -577,6 +597,11 @@ class amat : r
 class hat : mat
 {
 	displayName = "Heavy Antitank Trooper";
+	items[] += {
+		#if __has_include("\ctab\script_component.hpp")
+			"ItemAndroidMisc"
+		#endif
+	};
 	secondaryWeapon[] = {
 		"launch_I_Titan_short_F"
 	};
@@ -936,6 +961,9 @@ class ceng : basetrooper
 		"CUP_muzzle_snds_mp7"
 	};
 	items[] += {
+		#if __has_include("\ctab\script_component.hpp")
+			"ItemAndroidMisc",
+		#endif
 		"ACE_Clacker"
 	};
 	magazines[] = {
