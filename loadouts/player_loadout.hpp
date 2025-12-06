@@ -371,11 +371,6 @@ class ammg : aar
 class sniper : basetrooper
 {
 	displayName = "Sniper";
-	items[] += {
-		#if __has_include("\ctab\script_component.hpp")
-			"ItemAndroidMisc"
-		#endif
-	};
 	primaryWeapon[] =
 	{
 		"CUP_srifle_M107_Pristine"
@@ -402,6 +397,9 @@ class sniper : basetrooper
 	};
 	items[] = {
 		"greenmag_item_speedloader",
+		#if __has_include("\ctab\script_component.hpp")
+			"ItemAndroidMisc",
+		#endif
 		"ACE_RangeCard",
 		"ACE_MapTools",
 		"HandGrenade",
