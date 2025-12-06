@@ -2357,7 +2357,7 @@ switch (true) do
     };
     case (_unitRole in _leaderRole) :
     {
-        [arsenal, (_itemEquipment + _itemFacewear + _itemSpecial + _itemMod + _itemReflexSight + _itemWeaponGL + _itemWeaponPistol + _itemLeaderEquipment + _itemWeaponAmmo + _itemWeaponTracerAmmo + _tarkovuniforms)] call ace_arsenal_fnc_initBox;
+        [arsenal, (_itemEquipment + _itemFacewear + _itemSpecial + _itemMod + _itemReflexSight + _itemWeaponGL + _itemWeaponCQB + _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponPistol + _itemLeaderEquipment + _itemWeaponAmmo + _itemWeaponTracerAmmo + _tarkovuniforms)] call ace_arsenal_fnc_initBox;
     };
     case (_unitRole in ["r","B_Soldier_F"]) :
     {
