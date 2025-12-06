@@ -162,7 +162,7 @@ class basetrooper
 		"ItemWatch",
 		"ItemMap",
 		#if __has_include("\ctab\script_component.hpp")
-			"ItemMicroDAGR",
+			"ItemAndroid",
 		#else
 			"ItemGPS",
 		#endif
