@@ -2006,7 +2006,8 @@ private _itemEngineer =
 
 private _sideTerminal = ["O_UavTerminal","B_UavTerminal","I_UavTerminal","C_UavTerminal","","","","","",""] select _sideID;
 private _itemUAVTermial = [
-    _sideTerminal
+    _sideTerminal,
+    "ACE_UAVBattery"
 ];
 _itemEngineer append _itemUAVTermial;
 
@@ -2457,6 +2458,14 @@ switch (true) do
     {
         [arsenal, (_itemEquipment + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponCQB +  _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponPistol + _itemWeaponAmmo + _itemWeaponTracerAmmo +  _itemAmmoHAT + _itemLeaderEquipment + _itemPackHeavy + _tarkovuniforms)] call ace_arsenal_fnc_initBox;
     };
+    case (_unitRole in ["spaa","B_Soldier_AA_F"]) :
+    {
+        [arsenal, (_itemEquipment + _itemFacewear + _itemWeaponSPAA + _itemLeaderEquipment + _itemMod + _itemReflexSight + _itemWeaponCQB +  _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponPistol + _itemWeaponAmmo + _itemWeaponTracerAmmo +  _itemAmmoSPAA + _itemPackHeavy + _tarkovuniforms)] call ace_arsenal_fnc_initBox;
+    };
+        case (_unitRole in ["aspaa","B_Soldier_AAA_F"]) :
+    {
+        [arsenal, (_itemEquipment + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponCQB +  _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponPistol + _itemWeaponAmmo + _itemWeaponTracerAmmo +  _itemAmmoSPAA + _itemLeaderEquipment + _itemPackHeavy + _tarkovuniforms)] call ace_arsenal_fnc_initBox;
+    };
         case (_unitRole in ["mmg","B_HeavyGunner_F"]) :
     {
         [arsenal, (_itemEquipment + _itemSpecial + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponPistol + _itemWeaponAR + _itemWeaponAmmo + _itemWeaponTracerAmmo + _itemWeaponARAmmo + _itemWeaponHighCapAmmo + _itemWeaponMMG + _itemWeaponMMGAmmo + _itemLeaderEquipment + _itemPackHeavy + _tarkovuniforms)] call ace_arsenal_fnc_initBox;
@@ -2465,7 +2474,13 @@ switch (true) do
     {
         [arsenal, (_itemEquipment + _itemSpecial + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponCQB + _itemWeaponPistol + _itemWeaponRifle + _itemWeaponCarbine+ _itemWeaponAmmo + _itemWeaponTracerAmmo + _itemWeaponARAmmo + _itemWeaponHighCapAmmo + _itemWeaponMMGAmmo + _itemLeaderEquipment  + _itemPackHeavy + _tarkovuniforms + ["Binocular"])] call ace_arsenal_fnc_initBox;
     };
-        case (_unitRole == "full") :
+    case (_unitRole in ["isr","B_Soldier_UAV_F"]) :
+    {
+        [arsenal, (_itemEquipment + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponCQB +  _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponPistol + _itemWeaponAmmo + _itemWeaponTracerAmmo + _tarkovuniforms + _itemLeaderEquipment + _itemUAVTermial)] call ace_arsenal_fnc_initBox;
+
+        //player setVariable ["ace_medical_medicClass", 1, true];
+    };
+        case (_unitRole isEqualTo "full") :
     {
         [arsenal, true] call ace_arsenal_fnc_initBox;
     };
