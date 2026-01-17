@@ -97,54 +97,6 @@ if (isNil "_rejoincheck") then {
 private _itemEquipment =
 [
     //============================================================
-    //Non-Tarkov uniforms
-    //============================================================
-    //Female outfit models
-    "U_B_CombatUniform_mcam_W",
-    "U_B_CombatUniform_mcam_WO",
-    "U_B_CombatUniform_mcam_tshirt_W",
-    "WU_B_T_Soldier_F",
-    "WU_B_T_Soldier_AR_F",
-    "WU_B_GEN_Soldier_F",
-    "WU_B_GEN_Commander_F",
-
-    //Drip
-    "CUP_U_I_GUE_Anorak_01",
-    "CUP_U_I_GUE_Flecktarn3",
-    "rhsgref_uniform_alpenflage",
-    "rhsgref_uniform_3color_desert",
-
-    //Vanilla stuff
-    "U_B_CombatUniform_mcam",
-    "U_B_CombatUniform_mcam_tshirt",
-    "U_B_T_Soldier_F",
-    "U_B_T_Soldier_AR_F",
-
-    // Blyat
-    "CUP_U_O_CHDKZ_Lopotev",
-    "CUP_U_C_Tracksuit_01",
-    "CUP_U_C_Tracksuit_02",
-    "CUP_U_C_Tracksuit_03",
-    "CUP_U_C_Tracksuit_04",
-
-    "CUP_U_B_BDUv2_gloves_Tigerstripe",
-    "CUP_U_B_BDUv2_roll2_gloves_Tigerstripe",
-    "CUP_U_B_BDUv2_roll_gloves_Tigerstripe",
-    "CUP_U_B_BDUv2_gloves_Urban",
-    "CUP_U_B_BDUv2_roll2_gloves_Urban",
-    "CUP_U_B_BDUv2_roll_gloves_Urban",
-    "CUP_U_CRYE_G3C_AOR2",
-    "CUP_U_CRYE_G3C_AOR1",
-    "CUP_U_CRYE_G3C_M81",
-    "CUP_U_CRYE_MCAM_NP_Full",
-    "CUP_U_CRYE_MCAM_NP_Roll",
-    "CUP_U_CRYE_RGR_Full",
-    "CUP_U_CRYE_RGR_Roll",
-    "CUP_U_B_USMC_FROG1_WMARPAT",
-    "CUP_U_B_USMC_FROG2_DMARPAT",
-    "rhs_uniform_FROG01_wd",
-
-    //============================================================
     //Vests
     //============================================================
     //Vanilla Vests
@@ -221,22 +173,6 @@ private _itemEquipment =
 	"JCA_V_CarrierRigKBT_01_recon_black_F",
 	"JCA_V_CarrierRigKBT_01_recon_olive_F",
 	"JCA_V_CarrierRigKBT_01_recon_sand_F",
-	
-
-    //============================================================
-    //Backpacks
-    //============================================================
-    
-	"CUP_B_AssaultPack_ACU",
-	"B_AssaultPack_blk",
-	"B_AssaultPack_rgr",
-    "B_AssaultPack_cbr",
-    "B_AssaultPack_khk",
-    "B_AssaultPack_mcamo",
-	"B_AssaultPack_dgtl",
-    "B_AssaultPack_tna_F",
-	"B_AssaultPack_ocamo",
-	"B_AssaultPack_sgg",
     
     //============================================================
     //Helmets
@@ -265,6 +201,7 @@ private _itemEquipment =
     //Tools and misc
     //============================================================
     //ACE
+	"ACE_CableTie",
     "ACE_Flashlight_XL50",
     "ACE_MapTools",
     "ACE_RangeCard",
@@ -291,6 +228,57 @@ private _itemEquipment =
     "ItemAndroidMisc",
     "ItemMicroDAGRMisc"
 ];
+
+private _itemUniforms = [
+	//============================================================
+    //Non-Tarkov uniforms
+    //============================================================
+    //Female outfit models
+    "U_B_CombatUniform_mcam_W",
+    "U_B_CombatUniform_mcam_WO",
+    "U_B_CombatUniform_mcam_tshirt_W",
+    "WU_B_T_Soldier_F",
+    "WU_B_T_Soldier_AR_F",
+    "WU_B_GEN_Soldier_F",
+    "WU_B_GEN_Commander_F",
+
+    //Drip
+    "CUP_U_I_GUE_Anorak_01",
+    "CUP_U_I_GUE_Flecktarn3",
+    "rhsgref_uniform_alpenflage",
+    "rhsgref_uniform_3color_desert",
+
+    //Vanilla stuff
+    "U_B_CombatUniform_mcam",
+    "U_B_CombatUniform_mcam_tshirt",
+    "U_B_T_Soldier_F",
+    "U_B_T_Soldier_AR_F",
+
+    // Blyat
+    "CUP_U_O_CHDKZ_Lopotev",
+    "CUP_U_C_Tracksuit_01",
+    "CUP_U_C_Tracksuit_02",
+    "CUP_U_C_Tracksuit_03",
+    "CUP_U_C_Tracksuit_04",
+
+    "CUP_U_B_BDUv2_gloves_Tigerstripe",
+    "CUP_U_B_BDUv2_roll2_gloves_Tigerstripe",
+    "CUP_U_B_BDUv2_roll_gloves_Tigerstripe",
+    "CUP_U_B_BDUv2_gloves_Urban",
+    "CUP_U_B_BDUv2_roll2_gloves_Urban",
+    "CUP_U_B_BDUv2_roll_gloves_Urban",
+    "CUP_U_CRYE_G3C_AOR2",
+    "CUP_U_CRYE_G3C_AOR1",
+    "CUP_U_CRYE_G3C_M81",
+    "CUP_U_CRYE_MCAM_NP_Full",
+    "CUP_U_CRYE_MCAM_NP_Roll",
+    "CUP_U_CRYE_RGR_Full",
+    "CUP_U_CRYE_RGR_Roll",
+    "CUP_U_B_USMC_FROG1_WMARPAT",
+    "CUP_U_B_USMC_FROG2_DMARPAT",
+    "rhs_uniform_FROG01_wd"
+];
+_itemEquipment append _itemUniforms;
 
 private _itemHats = [
     "H_Bandanna_gry",
@@ -375,7 +363,7 @@ private _itemNVG =
 ];
 _itemEquipment append _itemNVG;
 
-private _itemArmNVG = ("getText (_x >> 'author') isEqualTo 'Aegis and Hartman'" configClasses (configFile >> "CfgWeapons") apply {configName _x});
+private _itemArmNVG = ("'Hartman' in (getText (_x >> 'author'))" configClasses (configFile >> "CfgWeapons") apply {configName _x}); // ['Aegis and Hartman','Anthrax and Hartman']
 _itemEquipment append _itemArmNVG;
 
 private _itemWeaponMelee =
@@ -388,6 +376,23 @@ private _itemWeaponMelee =
 ];
 _itemEquipment append _itemWeaponMelee;
 
+private _itemPackLight = [
+	//============================================================
+    //Backpacks
+    //============================================================
+    
+	"CUP_B_AssaultPack_ACU",
+	"B_AssaultPack_blk",
+	"B_AssaultPack_rgr",
+    "B_AssaultPack_cbr",
+    "B_AssaultPack_khk",
+    "B_AssaultPack_mcamo",
+	"B_AssaultPack_dgtl",
+    "B_AssaultPack_tna_F",
+	"B_AssaultPack_ocamo",
+	"B_AssaultPack_sgg"
+];
+_itemEquipment append _itemPackLight;
 
 private _itemPackMedLight =
 [
@@ -413,8 +418,10 @@ private _itemPackMedium =
 ];
 _itemPackMedium append _itemPackMedLight;
 
+private _winterCamo = [];
+private _itemSantaH = [];
 if (_winter) then {
-    private _winterCamo =
+   _winterCamo =
     [
         "CUP_I_B_PMC_Unit_29",
         "CUP_I_B_PMC_Unit_30",
@@ -428,7 +435,7 @@ if (_winter) then {
     ];
     _itemEquipment append _winterCamo;
 
-	private _itemSantaH = ("getText (_x >> 'descriptionShort') isEqualTo 'Festive Santa Hat'" configClasses (configFile >> "CfgWeapons") apply {configName _x});
+	_itemSantaH = ("getText (_x >> 'descriptionShort') isEqualTo 'Festive Santa Hat'" configClasses (configFile >> "CfgWeapons") apply {configName _x});
 	_itemEquipment append _itemSantaH;
 };
 
@@ -969,20 +976,7 @@ private _itemWeaponRifle =
     "rhs_weap_vhsd2",
     "rhs_weap_vhsd2_ct15x",
 
-	"MCC_M4A1_556_URGI",
-	"MCC_MK18_URGI",
-	"MCC_RattlerLT_7_556_BLK_MPLFS",
-	"MCC_KS1_BLK_Bravo",
-	"MCC_KS1_BLK_CTR",
-	"MCC_KS3_BLK_CTR",
-	"MCC_SpearLT_145_556_FDE_MPLFS",
-	"MCC_REC7_DI_556_BRZ_CTR",
-	"MCC_M4A1_556_Troy_145_BLK_CTR",
-	"MCC_M4A1_556_NFM_145_FDE_CTR",
-	"MCC_M4A1_556_Aero_145_OD_CTR",
-	"MCC_RD604",
-
-    "Tier1_SIG_MCX_115_Virtus",
+	"Tier1_SIG_MCX_115_Virtus",
 
     //============================================================
     //5.45x39mm
@@ -994,9 +988,7 @@ private _itemWeaponRifle =
     "rhs_weap_ak74m",
     "rhs_weap_ak74m_zenitco01",
 
-	"MCC_RD504",
-
-    //============================================================
+	//============================================================
     //7.62x39mm
     //============================================================
     "rhs_weap_savz58v",
@@ -1015,8 +1007,6 @@ private _itemWeaponRifle =
     "rhs_weap_pm63",
     "rhs_weap_m70ab2",
 
-	"MCC_RD704",
-
     //============================================================
     //7.62x51mm
     //============================================================
@@ -1025,7 +1015,215 @@ private _itemWeaponRifle =
     "CUP_arifle_G3A3_modern_ris",
 
     "rhs_weap_mk17_CQC",
-    "rhs_weap_l1a1_wood"
+    "rhs_weap_l1a1_wood",
+	
+	//============================================================
+	// MCC 5.56, 5.45, 7.62x39
+	//============================================================
+	"MCC_KS1_FDE_CTR",
+	"MCC_KS1_FDE_Bravo",
+	"MCC_KS1_FDE_SLK",
+	"MCC_KS1_BLK_CTR",
+	"MCC_KS1_BLK_Bravo",
+	"MCC_KS1_BLK_SLK",
+	"MCC_KS2_FDE_CTR",
+	"MCC_KS2_FDE_Bravo",
+	"MCC_KS2_FDE_SLK",
+	"MCC_KS3_FDE_CTR",
+	"MCC_KS3_FDE_Bravo",
+	"MCC_KS3_FDE_SLK",
+	"MCC_KS3_BLK_CTR",
+	"MCC_KS3_BLK_Bravo",
+	"MCC_KS3_BLK_SLK",
+	"MCC_KS4_FDE_CTR",
+	"MCC_KS4_FDE_Bravo",
+	"MCC_KS4_FDE_SLK",
+	"MCC_KS4_BLK_CTR",
+	"MCC_KS4_BLK_Bravo",
+	"MCC_KS4_BLK_SLK",
+	"MCC_LMT_MARSL_SPECWAR_556_FDE_CTR",
+	"MCC_LMT_MARSL_SPECWAR_556_FDE_SOPMOD",
+	"MCC_LMT_MARSL_SPECWAR_556_FDE_SLK",
+	"MCC_LMT_MARSL_SPECWAR_556_BLK_CTR",
+	"MCC_LMT_MARSL_SPECWAR_556_BLK_SOPMOD",
+	"MCC_LMT_MARSL_SPECWAR_556_BLK_SLK",
+	"MCC_M4A1_556_Aero_16_FDE_CTR",
+	"MCC_M4A1_556_Aero_16_FDE_BRAVO",
+	"MCC_M4A1_556_Aero_16_FDE_SLK",
+	"MCC_M4A1_556_Aero_145_FDE_CTR",
+	"MCC_M4A1_556_Aero_145_FDE_BRAVO",
+	"MCC_M4A1_556_Aero_145_FDE_SLK",
+	"MCC_M4A1_556_Aero_105_FDE_CTR",
+	"MCC_M4A1_556_Aero_105_FDE_BRAVO",
+	"MCC_M4A1_556_Aero_105_FDE_SLK",
+	"MCC_M4A1_556_Aero_85_FDE_CTR",
+	"MCC_M4A1_556_Aero_85_FDE_BRAVO",
+	"MCC_M4A1_556_Aero_85_FDE_SLK",
+	"MCC_M4A1_556_Aero_16_BLK_CTR",
+	"MCC_M4A1_556_Aero_16_BLK_BRAVO",
+	"MCC_M4A1_556_Aero_16_BLK_SLK",
+	"MCC_M4A1_556_Aero_145_BLK_CTR",
+	"MCC_M4A1_556_Aero_145_BLK_BRAVO",
+	"MCC_M4A1_556_Aero_145_BLK_SLK",
+	"MCC_M4A1_556_Aero_105_BLK_CTR",
+	"MCC_M4A1_556_Aero_105_BLK_BRAVO",
+	"MCC_M4A1_556_Aero_105_BLK_SLK",
+	"MCC_M4A1_556_Aero_85_BLK_CTR",
+	"MCC_M4A1_556_Aero_85_BLK_BRAVO",
+	"MCC_M4A1_556_Aero_85_BLK_SLK",
+	"MCC_M4A1_556_Aero_16_OD_CTR",
+	"MCC_M4A1_556_Aero_16_OD_BRAVO",
+	"MCC_M4A1_556_Aero_16_OD_SLK",
+	"MCC_M4A1_556_Aero_145_OD_CTR",
+	"MCC_M4A1_556_Aero_145_OD_BRAVO",
+	"MCC_M4A1_556_Aero_145_OD_SLK",
+	"MCC_M4A1_556_Aero_105_OD_CTR",
+	"MCC_M4A1_556_Aero_105_OD_BRAVO",
+	"MCC_M4A1_556_Aero_105_OD_SLK",
+	"MCC_M4A1_556_Aero_85_OD_CTR",
+	"MCC_M4A1_556_Aero_85_OD_BRAVO",
+	"MCC_M4A1_556_Aero_85_OD_SLK",
+	"MCC_M4A1_556_MFR_16_FDE_CTR",
+	"MCC_M4A1_556_MFR_145_FDE_CTR",
+	"MCC_M4A1_556_MFR_125_FDE_CTR",
+	"MCC_M4A1_556_MFR_105_FDE_CTR",
+	"MCC_M4A1_556_MFR_16_BLK_CTR",
+	"MCC_M4A1_556_MFR_145_BLK_CTR",
+	"MCC_M4A1_556_MFR_125_BLK_CTR",
+	"MCC_M4A1_556_MFR_105_BLK_CTR",
+	"MCC_M4A1_556_MFR_16_OD_CTR",
+	"MCC_M4A1_556_MFR_145_OD_CTR",
+	"MCC_M4A1_556_MFR_125_OD_CTR",
+	"MCC_M4A1_556_MFR_105_OD_CTR",
+	"MCC_M4A1_556_MFR_16_GRY_CTR",
+	"MCC_M4A1_556_MFR_145_GRY_CTR",
+	"MCC_M4A1_556_MFR_125_GRY_CTR",
+	"MCC_M4A1_556_MFR_105_GRY_CTR",
+	"MCC_M4A1_556_MFR_16_DE_CTR",
+	"MCC_M4A1_556_MFR_145_DE_CTR",
+	"MCC_M4A1_556_MFR_125_DE_CTR",
+	"MCC_M4A1_556_MFR_105_DE_CTR",
+	"MCC_M4A1_556_NFM_145_FDE_CTR",
+	"MCC_M4A1_556_NFM_145_FDE_Bravo",
+	"MCC_M4A1_556_NFM_145_FDE_SLK",
+	"MCC_M4A1_556_NFM_115_FDE_CTR",
+	"MCC_M4A1_556_NFM_115_FDE_Bravo",
+	"MCC_M4A1_556_NFM_115_FDE_SLK",
+	"MCC_M4A1_556_NFM_10_FDE_CTR",
+	"MCC_M4A1_556_NFM_10_FDE_Bravo",
+	"MCC_M4A1_556_NFM_10_FDE_SLK",
+	"MCC_M4A1_556_NFM_145_BLK_CTR",
+	"MCC_M4A1_556_NFM_145_BLK_Bravo",
+	"MCC_M4A1_556_NFM_145_BLK_SLK",
+	"MCC_M4A1_556_NFM_115_BLK_CTR",
+	"MCC_M4A1_556_NFM_115_BLK_Bravo",
+	"MCC_M4A1_556_NFM_115_BLK_SLK",
+	"MCC_M4A1_556_NFM_10_BLK_CTR",
+	"MCC_M4A1_556_NFM_10_BLK_Bravo",
+	"MCC_M4A1_556_NFM_10_BLK_SLK",
+	"MCC_M4A1_556_SMR_145_FDE_CTR",
+	"MCC_M4A1_556_SMR_145_FDE_Bravo",
+	"MCC_M4A1_556_SMR_145_FDE_SLK",
+	"MCC_M4A1_556_SMR_115_FDE_CTR",
+	"MCC_M4A1_556_SMR_115_FDE_Bravo",
+	"MCC_M4A1_556_SMR_115_FDE_SLK",
+	"MCC_M4A1_556_SMR_9_FDE_CTR",
+	"MCC_M4A1_556_SMR_9_FDE_Bravo",
+	"MCC_M4A1_556_SMR_9_FDE_SLK",
+	"MCC_M4A1_556_SMR_145_BLK_CTR",
+	"MCC_M4A1_556_SMR_145_BLK_Bravo",
+	"MCC_M4A1_556_SMR_145_BLK_SLK",
+	"MCC_M4A1_556_SMR_115_BLK_CTR",
+	"MCC_M4A1_556_SMR_115_BLK_Bravo",
+	"MCC_M4A1_556_SMR_115_BLK_SLK",
+	"MCC_M4A1_556_SMR_9_BLK_CTR",
+	"MCC_M4A1_556_SMR_9_BLK_Bravo",
+	"MCC_M4A1_556_SMR_9_BLK_SLK",
+	"MCC_M4A1_556_Troy_16_FDE_CTR",
+	"MCC_M4A1_556_Troy_145_FDE_CTR",
+	"MCC_M4A1_556_Troy_115_FDE_CTR",
+	"MCC_M4A1_556_Troy_9_FDE_CTR",
+	"MCC_M4A1_556_Troy_16_FDE_Bravo",
+	"MCC_M4A1_556_Troy_145_FDE_Bravo",
+	"MCC_M4A1_556_Troy_115_FDE_Bravo",
+	"MCC_M4A1_556_Troy_9_FDE_Bravo",
+	"MCC_M4A1_556_Troy_16_FDE_SLK",
+	"MCC_M4A1_556_Troy_145_FDE_SLK",
+	"MCC_M4A1_556_Troy_115_FDE_SLK",
+	"MCC_M4A1_556_Troy_9_FDE_SLK",
+	"MCC_M4A1_556_Troy_16_BLK_CTR",
+	"MCC_M4A1_556_Troy_145_BLK_CTR",
+	"MCC_M4A1_556_Troy_115_BLK_CTR",
+	"MCC_M4A1_556_Troy_9_BLK_CTR",
+	"MCC_M4A1_556_Troy_16_BLK_Bravo",
+	"MCC_M4A1_556_Troy_145_BLK_Bravo",
+	"MCC_M4A1_556_Troy_115_BLK_Bravo",
+	"MCC_M4A1_556_Troy_9_BLK_Bravo",
+	"MCC_M4A1_556_Troy_16_BLK_SLK",
+	"MCC_M4A1_556_Troy_145_BLK_SLK",
+	"MCC_M4A1_556_Troy_115_BLK_SLK",
+	"MCC_M4A1_556_Troy_9_BLK_SLK",
+	"MCC_M4A1_556_URGI",
+	"MCC_MK18_URGI",
+	"MCC_RattlerLT_6_556_BLK_MPLFS",
+	"MCC_RattlerLT_7_556_BLK_MPLFS",
+	"MCC_RD704",
+	"MCC_RD701",
+	"MCC_RD504",
+	"MCC_RD501",
+	"MCC_RD604",
+	"MCC_RD601",
+	"MCC_REC7_DI_556_FDE_CTR",
+	"MCC_REC7_DI_556_FDE_Bravo",
+	"MCC_REC7_DI_556_FDE_SLK",
+	"MCC_REC7_DI_556_BLK_CTR",
+	"MCC_REC7_DI_556_BLK_Bravo",
+	"MCC_REC7_DI_556_BLK_SLK",
+	"MCC_REC7_DI_556_GRY_CTR",
+	"MCC_REC7_DI_556_GRY_Bravo",
+	"MCC_REC7_DI_556_GRY_SLK",
+	"MCC_REC7_DI_556_OD_CTR",
+	"MCC_REC7_DI_556_OD_Bravo",
+	"MCC_REC7_DI_556_OD_SLK",
+	"MCC_REC7_DI_556_BRZ_CTR",
+	"MCC_REC7_DI_556_BRZ_Bravo",
+	"MCC_REC7_DI_556_BRZ_SLK",
+	"MCC_SpearLT_16_556_ANO_MPLFS",
+	"MCC_SpearLT_16_556_ANO_Bravo",
+	"MCC_SpearLT_16_556_ANO_SLK",
+	"MCC_SpearLT_145_556_ANO_MPLFS",
+	"MCC_SpearLT_145_556_ANO_Bravo",
+	"MCC_SpearLT_145_556_ANO_SLK",
+	"MCC_SpearLT_115_556_ANO_MPLFS",
+	"MCC_SpearLT_115_556_ANO_Bravo",
+	"MCC_SpearLT_115_556_ANO_SLK",
+	"MCC_SpearLT_9_556_ANO_MPLFS",
+	"MCC_SpearLT_9_556_ANO_Bravo",
+	"MCC_SpearLT_9_556_ANO_SLK",
+	"MCC_SpearLT_16_556_FDE_MPLFS",
+	"MCC_SpearLT_16_556_FDE_Bravo",
+	"MCC_SpearLT_16_556_FDE_SLK",
+	"MCC_SpearLT_145_556_FDE_MPLFS",
+	"MCC_SpearLT_145_556_FDE_Bravo",
+	"MCC_SpearLT_145_556_FDE_SLK",
+	"MCC_SpearLT_115_556_FDE_MPLFS",
+	"MCC_SpearLT_115_556_FDE_Bravo",
+	"MCC_SpearLT_115_556_FDE_SLK",
+	"MCC_SpearLT_9_556_FDE_MPLFS",
+	"MCC_SpearLT_9_556_FDE_Bravo",
+	"MCC_SpearLT_9_556_FDE_SLK",
+	"MCC_SpearLT_16_556_BLK_MPLFS",
+	"MCC_SpearLT_16_556_BLK_Bravo",
+	"MCC_SpearLT_16_556_BLK_SLK",
+	"MCC_SpearLT_145_556_BLK_MPLFS",
+	"MCC_SpearLT_145_556_BLK_Bravo",
+	"MCC_SpearLT_145_556_BLK_SLK",
+	"MCC_SpearLT_115_556_BLK_MPLFS",
+	"MCC_SpearLT_115_556_BLK_Bravo",
+	"MCC_SpearLT_115_556_BLK_SLK",
+	"MCC_SpearLT_9_556_BLK_MPLFS",
+	"MCC_SpearLT_9_556_BLK_Bravo",
+	"MCC_SpearLT_9_556_BLK_SLK"
 ];
 
 private _itemWeaponCarbine =
@@ -1158,7 +1356,9 @@ private _itemWeaponAmmo =
     "SmokeShellBlue",
 
     //Make eyeballs hurt
-    "ACE_M84",
+    "tsp_flashbang_m84",
+	"tsp_flashbang_cts2",
+	"tsp_flashbang_fakels",
     "ACE_Chemlight_HiGreen",
 	"ACE_Chemlight_IR"
 ];
@@ -2019,7 +2219,7 @@ private _itemSF =
     //BIS and Mods
     "O_NVGoggles_grn_F",
     "DemoCharge_Remote_Mag",
-    "ACE_CTS9",
+    "tsp_flashbang_cts",
     "ACE_CableTie",
     "ACE_IR_Strobe_Item",
     "ACE_Clacker",
@@ -2167,6 +2367,13 @@ private _itemUAVTermial = [
 ];
 _itemEngineer append _itemUAVTermial;
 
+private _itemCrewHelm = [
+	"CUP_H_SPH4",
+	"CUP_H_SPH4_khaki",
+	"CUP_H_SPH4_grey",
+	"CUP_H_SPH4_green"
+];
+
 private _itemTankCrew =
 [
     //"diw_armor_plates_main_plate",
@@ -2179,11 +2386,6 @@ private _itemTankCrew =
     "ACRE_PRC343",
     "SmokeShellBlue",
     "H_HelmetCrew_I",
-    "U_B_CombatUniform_mcam_W",
-    "U_B_CombatUniform_mcam_WO",
-    "U_B_CombatUniform_mcam_tshirt_W",
-    "WU_B_GEN_Soldier_F",
-    "WU_B_GEN_Commander_F",
     "Rangefinder",
     "ACE_Vector",
     "ACE_IR_Strobe_Item",
@@ -2202,12 +2404,6 @@ private _itemTankCrew =
     "ItemMicroDAGRMisc",
 
     "rhsgref_6b23_khaki",
-    "B_AssaultPack_rgr",
-    "B_AssaultPack_cbr",
-    "B_AssaultPack_khk",
-    "B_AssaultPack_mcamo",
-    "B_AssaultPack_tna_F",
-    "CUP_B_AssaultPack_ACU",
     "rhsusf_oakley_goggles_blk",
     "Tier1_EXPS3_0_Black",
     "Tier1_Larue_FUG_Black"
@@ -2215,6 +2411,14 @@ private _itemTankCrew =
 _itemTankCrew append _itemHats;
 _itemTankCrew append _itemNVG;
 _itemTankCrew append _itemWeaponMelee;
+_itemTankCrew append _itemArmNVG;
+_itemTankCrew append _itemPackLight;
+_itemTankCrew append _itemUniforms;
+_itemTankCrew append _itemCrewHelm;
+if (_winter) then {
+	_itemTankCrew append _itemSantaH;
+	_itemTankCrew append _winterCamo;
+};
 
 private _airHelm = [
     "H_PilotHelmetHeli_B",
@@ -2285,12 +2489,6 @@ private _itemHeloCrew =
 
     "G_Bandanna_aviator",
     "rhsusf_mbav_light",
-    "B_AssaultPack_rgr",
-    "B_AssaultPack_cbr",
-    "B_AssaultPack_khk",
-    "B_AssaultPack_mcamo",
-    "B_AssaultPack_tna_F",
-    "CUP_B_AssaultPack_ACU",
     "Tier1_EXPS3_0_Black",
     "Tier1_Larue_FUG_Black"
 ];
@@ -2298,6 +2496,14 @@ _itemHeloCrew append _itemHats;
 _itemHeloCrew append _airHelm;
 _itemHeloCrew append _itemNVG;
 _itemHeloCrew append _itemWeaponMelee;
+_itemHeloCrew append _itemArmNVG;
+_itemHeloCrew append _itemPackLight;
+_itemHeloCrew append _itemUniforms;
+_itemHeloCrew append _itemCrewHelm;
+if (_winter) then {
+	_itemHeloCrew append _itemSantaH;
+	_itemHeloCrew append _winterCamo;
+};
 
 private _itemAirCrew =
 [
@@ -2337,6 +2543,10 @@ _itemAirCrew append _itemHats;
 _itemAirCrew append _airHelm;
 _itemAirCrew append _itemNVG;
 _itemAirCrew append _itemWeaponMelee;
+_itemAirCrew append _itemArmNVG;
+if (_winter) then {
+	_itemAirCrew append _itemSantaH;
+};
 
 private _itemMedical = [""];
 private _itemMedicalAdv = [""];

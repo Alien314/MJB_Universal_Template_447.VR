@@ -148,10 +148,11 @@ class basetrooper
 				LIST_2("ACE_epinephrine"),
 				LIST_2("ACE_morphine"),
 				LIST_2("ACE_splint"),
-				LIST_3("ACE_bloodIV_500"),
+				//LIST_3("ACE_bloodIV_500"),
 			#endif
 		#else
 		#endif
+		LIST_4("ACE_CableTie"),
 		"greenmag_item_speedloader",
 		"ACE_RangeCard",
 		"ACE_MapTools"
@@ -200,7 +201,7 @@ class r : basetrooper
 		"CUP_acc_ANPEQ_15_Flashlight_Black_L"
 	};
 	magazines[] += {
-		LIST_2("ACE_M84"),
+		LIST_2("tsp_flashbang_m84"),
 		"SmokeShellRed",
 		"CUP_15Rnd_9x19_M9",
 		LIST_7("CUP_30Rnd_556x45_PMAG_BLACK_PULL")
@@ -219,7 +220,7 @@ class r : basetrooper
 				LIST_2("ACE_epinephrine"),
 				LIST_2("ACE_morphine"),
 				LIST_2("ACE_splint"),
-				LIST_2("ACE_bloodIV"),
+				//LIST_2("ACE_bloodIV"),
 			#endif
 		#else
 			LIST_3("FirstAidKit"),
@@ -246,7 +247,7 @@ class ar : basetrooper
 	};
 	magazines[] +=
 	{
-		LIST_2("ACE_M84"),
+		LIST_2("tsp_flashbang_m84"),
 		"SmokeShellRed",
 		"CUP_15Rnd_9x19_M9",
 		#if __has_include("\z\ace\addons\medical_engine\script_component.hpp")
@@ -326,7 +327,7 @@ class mmg : ar
 	};
 	magazines[] =
 	{
-		LIST_2("ACE_M84"),
+		LIST_2("tsp_flashbang_m84"),
 		"SmokeShellRed",
 		LIST_3("greenmag_beltlinked_762x51_basic_200"),
 		"CUP_15Rnd_9x19_M9"
@@ -403,21 +404,18 @@ class sniper : basetrooper
 		"DemoCharge_Remote_Mag",
 		LIST_2("greenmag_ammo_127x99_basic_60Rnd"),
 		LIST_2("CUP_40Rnd_46x30_MP7"),
-		LIST_4("ACE_10Rnd_127x99_API_Mag")
-	};
-	items[] = {
-		"greenmag_item_speedloader",
-		#if __has_include("\ctab\script_component.hpp")
-			"ItemAndroidMisc",
-		#endif
-		"ACE_RangeCard",
-		"ACE_MapTools",
+		LIST_2("ACE_10Rnd_127x99_API_Mag"),
 		"HandGrenade",
 		LIST_2("SmokeShell")
 	};
+	items[] += {
+		#if __has_include("\ctab\script_component.hpp")
+			"ItemAndroidMisc"
+		#endif
+	};
 	backpackItems[] += {
 		"ACE_Tripod",
-		LIST_3("ACE_10Rnd_127x99_API_Mag")
+		LIST_4("ACE_10Rnd_127x99_API_Mag")
 	};
 };
 
@@ -454,7 +452,7 @@ class tl : r
 		#endif
 	};
 	magazines[] = {
-		LIST_2("ACE_M84"),
+		LIST_2("tsp_flashbang_m84"),
 		LIST_2("greenmag_ammo_556x45_basic_60Rnd"),
 		"SmokeShellRed",
 		"SmokeShellBlue",
@@ -500,7 +498,7 @@ class cls : r
 		"B_Carryall_oucamo"
 	};
 	magazines[] = {
-		LIST_2("ACE_M84"),
+		LIST_2("tsp_flashbang_m84"),
 		"CUP_15Rnd_9x19_M9",
 		#if __has_include("\z\ace\addons\medical_engine\script_component.hpp")
 			#if __has_include("\z\ace\addons\nomedical\script_component.hpp")
@@ -717,7 +715,7 @@ class sfsl : sl
 	};
 	magazines[] = {
 		LIST_7("CUP_30Rnd_556x45_Emag_Tracer_Yellow"),
-		LIST_4("ACE_CTS9"),
+		LIST_4("tsp_flashbang_cts"),
 		LIST_2("HandGrenade"),
 		LIST_3("greenmag_ammo_556x45_basic_60Rnd"),
 		"CUP_12Rnd_45ACP_mk23"
@@ -770,7 +768,7 @@ class sfmed : cls
 		LIST_3("greenmag_ammo_12G_basic_24Rnd"),
 		"SmokeShellBlue",
 		LIST_2("SmokeShellRed"),
-		LIST_2("ACE_CTS9"),
+		LIST_2("tsp_flashbang_cts"),
 		#if __has_include("\z\ace\addons\medical_engine\script_component.hpp")
 			#if __has_include("\z\ace\addons\nomedical\script_component.hpp")
 				LIST_5("diw_armor_plates_main_autoInjector"),
@@ -849,7 +847,7 @@ class sfmat : mat
 	};
 	magazines[] = {
 		LIST_12("CUP_30Rnd_556x45_Emag"),
-		LIST_2("ACE_CTS9"),
+		LIST_2("tsp_flashbang_cts"),
 		LIST_2("SmokeShellBlue"),
 		LIST_3("greenmag_ammo_556x45_basic_60Rnd"),
 		"HandGrenade",
@@ -900,7 +898,7 @@ class sfar : ar
 	};
 	magazines[] = {
 		LIST_2("CUP_100Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M"),
-		LIST_2("ACE_CTS9"),
+		LIST_2("tsp_flashbang_cts"),
 		LIST_2("SmokeShellBlue"),
 		"HandGrenade",
 		"CUP_12Rnd_45ACP_mk23"
@@ -1107,7 +1105,7 @@ class crew : basetrooper
 		"CUP_optic_ZeissZPoint"
 	};
 	magazines[] += {
-		LIST_2("ACE_M84"),
+		LIST_2("tsp_flashbang_m84"),
 		"SmokeShellRed",
 		"CUP_15Rnd_9x19_M9",
 		LIST_2("CUP_30Rnd_556x45_PMAG_BLACK_PULL")
