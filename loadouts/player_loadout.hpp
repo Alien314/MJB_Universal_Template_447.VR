@@ -115,7 +115,7 @@ class basetrooper
 	};
 	goggles[] = {};
 	hmd[] = {
-		"CUP_NVG_GPNVG_black"
+		"CUP_NVG_GPNVG_green_WP"
 	};
 
 	//All Randomized. Add Primary Weapon and attachments.
@@ -570,7 +570,7 @@ class mat : r
 		#endif
 	};
 	secondaryWeapon[] = {
-		"launch_MRAWS_green_F"
+		"launch_MRAWS_green_rail_F"
 	};
 	backpack[] = {
 		"B_Carryall_cbr"
