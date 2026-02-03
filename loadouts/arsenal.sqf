@@ -1016,7 +1016,12 @@ private _itemWeaponRifle =
     "CUP_arifle_XM8_Railed",
 
     "CUP_arifle_ACR_blk_556",
+    "CUP_arifle_ACR_snw_556",
+    "CUP_arifle_ACR_tan_556",
+    "CUP_arifle_ACR_wdl_556",
 
+    "CUP_CZ_BREN2_556_11",
+    "CUP_CZ_BREN2_556_11_Grn",
     "CUP_CZ_BREN2_556_11_Tan",
 
     "CUP_arifle_HK416_Black",
@@ -1027,9 +1032,24 @@ private _itemWeaponRifle =
     "Tier1_HK416D145_MW13_CTR",
 
 	"CUP_arifle_M4A1_SOMMOD_black",
+    "CUP_arifle_M4A1_SOMMOD_ctrg",
+    "CUP_arifle_M4A1_SOMMOD_ctrgt",
+    "CUP_arifle_M4A1_SOMMOD_tan",
+    "CUP_arifle_M4A1_SOMMOD_hex",
+    "CUP_arifle_M4A1_SOMMOD_snow",
+    "CUP_arifle_M4A1_SOMMOD_green",
+    "CUP_arifle_M4A1_SOMMOD_Grip_black",
+    "CUP_arifle_M4A1_SOMMOD_Grip_ctrg",
+    "CUP_arifle_M4A1_SOMMOD_Grip_ctrgt",
+    "CUP_arifle_M4A1_SOMMOD_Grip_tan",
+    "CUP_arifle_M4A1_SOMMOD_Grip_hex",
+    "CUP_arifle_M4A1_SOMMOD_Grip_snow",
+    "CUP_arifle_M4A1_SOMMOD_Grip_green",
     "rhs_weap_m4a1_blockII_KAC_bk",
 
     "CUP_Famas_F1_Rail",
+    "CUP_Famas_F1_Rail_Arid",
+    "CUP_Famas_F1_Rail_Wood",
 
 	"CUP_arifle_M16A4_Base",
     "rhs_weap_m16a4_carryhandle",
@@ -1078,8 +1098,22 @@ private _itemWeaponRifle =
     //============================================================
     "CUP_arifle_DSA_SA58_OSW_VFG",
 	"CUP_arifle_Mk17_CQC",
+    "CUP_arifle_Mk17_CQC_AFG",
+    "CUP_arifle_Mk17_CQC_FG",
+    "CUP_arifle_Mk17_CQC_Black",
+    "CUP_arifle_Mk17_CQC_AFG_black",
+    "CUP_arifle_Mk17_CQC_FG_black",
+    "CUP_arifle_Mk17_CQC_woodland",
+    "CUP_arifle_Mk17_CQC_AFG_woodland",
+    "CUP_arifle_Mk17_CQC_FG_woodland",
+    
+    "CUP_arifle_G3A3_ris",
+    "CUP_arifle_G3A3_ris_vfg",
     "CUP_arifle_G3A3_modern_ris",
-
+    "CUP_arifle_G3A3_ris_black",
+    "CUP_arifle_G3A3_ris_vfg_black",
+    "CUP_arifle_G3A3_modern_ris_black",
+    
     "rhs_weap_mk17_CQC",
     "rhs_weap_l1a1_wood",
 	
@@ -1348,6 +1382,9 @@ private _itemWeaponCarbine =
     "CUP_arifle_XM8_Compact_Rail",
 
     "CUP_arifle_ACRC_blk_556",
+    "CUP_arifle_ACRC_snw_556",
+    "CUP_arifle_ACRC_tan_556",
+    "CUP_arifle_ACRC_wdl_556",
 
     "CUP_arifle_AK102",
     "CUP_arifle_AK102_railed",
@@ -1736,6 +1773,9 @@ private _itemWeaponCQB =
     //SMGs
     "CUP_arifle_SR3M_Vikhr_VFG_top_rail",
     "CUP_smg_Mac10_rail",
+    "CUP_smg_MP5A5",
+    "CUP_smg_MP5A5_Rail",
+    "CUP_smg_MP5A5_Rail_VFG",
     "CUP_smg_MP5A5_Rail_AFG",
     "CUP_smg_SA61",
     "CUP_smg_vityaz_vfg_top_rail",
@@ -2063,6 +2103,9 @@ private _itemWeaponGL =
     "arifle_TRG21_GL_F",
 
     "CUP_arifle_ACR_EGLM_blk_556",
+    "CUP_arifle_ACR_EGLM_snw_556",
+    "CUP_arifle_ACR_EGLM_tan_556",
+    "CUP_arifle_ACR_EGLM_wdl_556",
 
     "CUP_arifle_M16A4_GL",
 
@@ -2085,6 +2128,8 @@ private _itemWeaponGL =
     "CUP_arifle_AK101_GL_railed",
     "CUP_arifle_AK19_GP34_bicolor",
 
+    "CUP_CZ_BREN2_556_11_GL",
+    "CUP_CZ_BREN2_556_11_GL_Grn",
     "CUP_CZ_BREN2_556_11_GL_Tan",
 
     "rhs_weap_hk416d145_m320",
@@ -2122,10 +2167,14 @@ private _itemWeaponGL =
     //7.62x51mm
     "CUP_arifle_DSA_SA58_OSW_M203",
     "CUP_arifle_Mk17_CQC_EGLM",
-
-
+    "CUP_arifle_Mk17_CQC_EGLM_black",
+    "CUP_arifle_Mk17_CQC_EGLM_woodland",
 
     "CUP_arifle_ACR_EGLM_blk_68",
+    "CUP_arifle_ACR_EGLM_snw_68",
+    "CUP_arifle_ACR_EGLM_tan_68",
+    "CUP_arifle_ACR_EGLM_wdl_68",
+
     "CUP_arifle_AK15_GP34_bicolor",
 
     /*/ Fancy mags
@@ -2287,6 +2336,21 @@ private _itemWeaponSPAA =
 private _itemAmmoSPAA =
 [
     "Titan_AA",
+    "Rangefinder",
+    "ACE_Vector"
+];
+
+private _itemWeaponMortar =
+[
+    "NDS_W_M224_mortarCarry"
+];
+
+private _itemMortarAmmo =
+[
+    "NDS_M_6Rnd_60mm_HE",
+    "NDS_M_6Rnd_60mm_HE_0",
+    "NDS_M_6Rnd_60mm_ILLUM",
+    "NDS_M_6Rnd_60mm_SMOKE",
     "Rangefinder",
     "ACE_Vector"
 ];
@@ -2748,14 +2812,14 @@ if (_aceMedLoaded) then { //Check for ace med
         //"ACE_adenosine",
         //Specialized Equipments
         "ACE_personalAidKit",
-        "ACE_surgicalKit"
+        "ACE_surgicalKit",
+		"ACRE_PRC148"
     ];
-  _itemMedic append _itemMedicalAdv;
+	_itemMedic append _itemMedicalAdv;
 } else { // Add base med items
     {_x pushBack "FirstAidKit";} forEach [_itemEquipment, _itemTankCrew, _itemHeloCrew, _itemAirCrew];
     _itemMedic append ["Medikit", "diw_armor_plates_main_autoInjector"];
 };
-_itemMedicalAdv pushBack "ACRE_PRC148";
 
 private _ownedDLCs = getDLCs 1; // DLC check, Credit to MajorDanvers
 private _hasApex = 395180 in _ownedDLCs;
@@ -2884,7 +2948,7 @@ switch (true) do
     };
     case (_unitRole in ["aar","B_Soldier_AAR_F"]) :
     {
-        [arsenal, (_itemEquipment + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponCQB +  _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponPistol + _itemWeaponAmmo + _itemWeaponTracerAmmo + _itemWeaponARAmmo + _itemWeaponHighCapAmmo + _tarkovuniforms + ["Binocular"])] call ace_arsenal_fnc_initBox;// + _itemPackMedLight + _itemPackMedium + _itemWeaponAR
+        [arsenal, (_itemEquipment + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponCQB +  _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponPistol + _itemWeaponAmmo + _itemWeaponTracerAmmo + _itemWeaponARAmmo + _itemWeaponHighCapAmmo + _tarkovuniforms + _itemWeaponAR + _itemPackMedLight + ["Binocular"])] call ace_arsenal_fnc_initBox;// _itemPackMedium + 
     };
     case (_unitRole in _leaderRole) :
     {
@@ -2965,8 +3029,8 @@ switch (true) do
 
         player setUnitTrait ["UAVHacker", true];
 
-        if (isNil "mjb_engiButtonId") then {mjb_engiButtonId = -1;};
-        mjb_engiButtonId = [(_itemEngineer), "Engineer","\A3\ui_f\data\igui\cfg\actions\repair_ca.paa", mjb_engiButtonId] call ace_arsenal_fnc_addRightPanelButton;
+        /*if (isNil "mjb_engiButtonId") then {mjb_engiButtonId = -1;};
+        mjb_engiButtonId = [(_itemEngineer), "Engineer","\A3\ui_f\data\igui\cfg\actions\repair_ca.paa", mjb_engiButtonId] call ace_arsenal_fnc_addRightPanelButton;*/
     };
     case (_unitRole in ["crew","B_crew_F"]) :
     {
@@ -2988,7 +3052,7 @@ switch (true) do
     {
         [arsenal, (_itemEquipment + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponCQB +  _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponPistol + _itemWeaponAmmo + _itemWeaponTracerAmmo +  _itemAmmoHAT + _itemLeaderEquipment + _itemPackHeavy + _tarkovuniforms)] call ace_arsenal_fnc_initBox;
     };
-    case (_unitRole in ["spaa","B_Soldier_AA_F"]) :
+		case (_unitRole in ["spaa","B_Soldier_AA_F"]) :
     {
         [arsenal, (_itemEquipment + _itemFacewear + _itemWeaponSPAA + _itemLeaderEquipment + _itemMod + _itemReflexSight + _itemWeaponCQB +  _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponPistol + _itemWeaponAmmo + _itemWeaponTracerAmmo +  _itemAmmoSPAA + _itemPackHeavy + _tarkovuniforms)] call ace_arsenal_fnc_initBox;
     };
@@ -3004,9 +3068,17 @@ switch (true) do
     {
         [arsenal, (_itemEquipment + _itemSpecial + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponCQB + _itemWeaponPistol + _itemWeaponRifle + _itemWeaponCarbine+ _itemWeaponAmmo + _itemWeaponTracerAmmo + _itemWeaponARAmmo + _itemWeaponHighCapAmmo + _itemWeaponMMGAmmo + _itemLeaderEquipment  + _itemPackHeavy + _tarkovuniforms + ["Binocular"])] call ace_arsenal_fnc_initBox;
     };
-    case (_unitRole in ["isr","B_Soldier_UAV_F"]) :
+		case (_unitRole in ["isr","B_Soldier_UAV_F"]) :
     {
         [arsenal, (_itemEquipment + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponCQB +  _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponPistol + _itemWeaponAmmo + _itemWeaponTracerAmmo + _tarkovuniforms + _itemLeaderEquipment + _itemUAVTermial)] call ace_arsenal_fnc_initBox;
+    };
+		case (_unitRole in ["mrt","B_support_Mort_F"]) :
+    {
+        [arsenal, (_itemEquipment + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponCQB + _itemWeaponPistol + _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponAmmo + _itemWeaponTracerAmmo + _itemWeaponMortar + _itemMortarAmmo + _itemLeaderEquipment + _itemPackHeavy + ["NDS_M224_B_Ammo"] + _tarkovuniforms)] call ace_arsenal_fnc_initBox;
+    };
+		case (_unitRole in ["amrt","B_support_AMort_F"]) :
+    {
+        [arsenal, (_itemEquipment + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponCQB + _itemWeaponPistol + _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponAmmo + _itemWeaponTracerAmmo + _itemMortarAmmo + _itemLeaderEquipment + _itemPackHeavy + _tarkovuniforms)] call ace_arsenal_fnc_initBox;
     };
         case (_unitRole in ["full","zeus","B_RangeMaster_F"]) :
     {
