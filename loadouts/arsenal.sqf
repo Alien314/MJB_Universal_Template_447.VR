@@ -291,9 +291,14 @@ private _itemUniforms = [
 
     //Vanilla stuff
     "U_B_CombatUniform_mcam",
-    "U_B_CombatUniform_mcam_tshirt",
     "U_B_T_Soldier_F",
+    "U_B_CombatUniform_mcam_wdl_f",
+    "U_B_CombatUniform_mcam_tshirt",
     "U_B_T_Soldier_AR_F",
+    "U_B_CombatUniform_tshirt_mcam_wdL_f",
+    "U_B_CombatUniform_mcam_vest",
+    "U_B_T_Soldier_SL_F",
+    "U_B_CombatUniform_vest_mcam_wdl_f",
 
     // CUP Blyat
     "CUP_U_O_CHDKZ_Lopotev",
@@ -1252,6 +1257,26 @@ private _itemWeaponRifle =
 	"MCC_M4A1_556_MFR_145_DE_CTR",
 	"MCC_M4A1_556_MFR_125_DE_CTR",
 	"MCC_M4A1_556_MFR_105_DE_CTR",
+	"MCC_M4A1_556_MFR_16_FDE_SLK",
+	"MCC_M4A1_556_MFR_145_FDE_SLK",
+	"MCC_M4A1_556_MFR_125_FDE_SLK",
+	"MCC_M4A1_556_MFR_105_FDE_SLK",
+	"MCC_M4A1_556_MFR_16_BLK_SLK",
+	"MCC_M4A1_556_MFR_145_BLK_SLK",
+	"MCC_M4A1_556_MFR_125_BLK_SLK",
+	"MCC_M4A1_556_MFR_105_BLK_SLK",
+	"MCC_M4A1_556_MFR_16_OD_SLK",
+	"MCC_M4A1_556_MFR_145_OD_SLK",
+	"MCC_M4A1_556_MFR_125_OD_SLK",
+	"MCC_M4A1_556_MFR_105_OD_SLK",
+	"MCC_M4A1_556_MFR_16_GRY_SLK",
+	"MCC_M4A1_556_MFR_145_GRY_SLK",
+	"MCC_M4A1_556_MFR_125_GRY_SLK",
+	"MCC_M4A1_556_MFR_105_GRY_SLK",
+	"MCC_M4A1_556_MFR_16_DE_SLK",
+	"MCC_M4A1_556_MFR_145_DE_SLK",
+	"MCC_M4A1_556_MFR_125_DE_SLK",
+	"MCC_M4A1_556_MFR_105_DE_SLK",
 	"MCC_M4A1_556_NFM_145_FDE_CTR",
 	"MCC_M4A1_556_NFM_145_FDE_Bravo",
 	"MCC_M4A1_556_NFM_145_FDE_SLK",
@@ -2248,6 +2273,14 @@ private _itemWeaponGL =
     "1Rnd_SmokeBlue_Grenade_shell",
     "1Rnd_SmokeGreen_Grenade_shell",
 
+	"mjb_1Rnd_impactSmonk",
+	"mjb_1Rnd_impactSmonkBlue",
+	"mjb_1Rnd_impactSmonkGreen",
+	//"mjb_1Rnd_impactSmonkOrange",
+	//"mjb_1Rnd_impactSmonkPurple",
+	"mjb_1Rnd_impactSmonkRed",
+	//"mjb_1Rnd_impactSmonkYellow",
+
 	"CUP_1Rnd_HEDP_M203",
 	"rhs_mag_M433_HEDP",
 
@@ -2257,6 +2290,7 @@ private _itemWeaponGL =
     "CUP_1Rnd_HE_GP25_M",
     "CUP_IlumFlareWhite_GP25_M",
     "CUP_1Rnd_SMOKE_GP25_M",
+    "CUP_1Rnd_SmokeBlue_GP25_M",
     "CUP_1Rnd_SmokeRed_GP25_M",
     "CUP_1Rnd_SmokeGreen_GP25_M",
     "rhs_VOG25",
@@ -2300,13 +2334,15 @@ private _itemWeaponLAT =
     //"rhs_weap_M136_hedp", // Not great for AT
     //"rhs_weap_M136_hp", // High Penetration
 
-    "rhs_acc_at4_handler"
+    "rhs_acc_at4_handler",
 
     //Launchers in Backpack - should work with the normal class now?
-    //"CUP_launch_M136_Loaded",
-    //"CUP_launch_M72A6_Loaded",
-    //"CUP_M72A6_M",
-    //"CUP_launch_RPG26_Loaded"
+	"CUP_RPG26_M",
+	"CUP_M72A6_M",
+	"CUP_M136_M"/*,
+    "CUP_launch_M136_Loaded",
+    "CUP_launch_M72A6_Loaded"//,
+    //"CUP_launch_RPG26_Loaded"/*/
 ];
 
 //if !(isClass (configFile >> "CfgWeapons" >> "rhs_weap_rpg7")) then {};
