@@ -94,7 +94,7 @@ class Extended_InitPost_EventHandlers
     class CUP_B_USMC_Soldier { // class to add role to, (typeOf unit)
         class varInit {
             // gear assignment, third argument is the role to add
-            init = "if !(isServer) exitWith {}; [_this select 0, 'xENEMY_LOADOUT', 'r'] call tmf_assigngear_fnc_assigngear;"; 
+            init = "if !(local _this) exitWith {}; [_this select 0, 'xENEMY_LOADOUT', 'r'] call tmf_assigngear_fnc_assigngear;"; 
         };
     };//*/
 };
