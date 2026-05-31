@@ -152,9 +152,11 @@ class basetrooper
 			#endif
 		#else
 		#endif
-		LIST_4("ACE_CableTie"),
+		"ACE_CableTie",
+		"ACE_IR_Strobe_Item",
 		"greenmag_item_speedloader",
 		"ACE_RangeCard",
+		"tsp_sling",
 		"ACE_MapTools"
 	};
 
@@ -202,7 +204,7 @@ class r : basetrooper
 	};
 	magazines[] += {
 		LIST_2("tsp_flashbang_m84"),
-		"SmokeShellRed",
+		"mjb_SmokeShellLightBlue",
 		"CUP_15Rnd_9x19_M9",
 		LIST_7("CUP_30Rnd_556x45_PMAG_BLACK_PULL")
 	};
@@ -231,6 +233,90 @@ class r : basetrooper
 
 };
 
+// RATS Rifle Respawn
+class riflerespawn : r
+{
+	displayName = "Rifle RAT";
+	primaryWeapon[] = {
+		"CUP_arifle_HK416_Black"
+	};
+	scope[] = {
+		"optic_hamr"
+	};
+	attachment[] = {
+		"CUP_acc_ANPEQ_15_Flashlight_Black_L"
+	};
+	magazines[] += {
+		LIST_2("tsp_flashbang_m84"),
+		"mjb_SmokeShellLightBlue",
+		"CUP_15Rnd_9x19_M9",
+		LIST_7("CUP_30Rnd_556x45_PMAG_BLACK_PULL")
+	};
+	backpackItems[] += {
+		LIST_6("CUP_30Rnd_556x45_PMAG_BLACK_PULL"),
+		LIST_3("greenmag_ammo_556x45_basic_60Rnd"),
+		#if __has_include("\z\ace\addons\medical_engine\script_component.hpp")
+			#if __has_include("\z\ace\addons\nomedical\script_component.hpp")
+				LIST_3("FirstAidKit"),
+			#else
+				LIST_20("ACE_fieldDressing"),
+				//LIST_10("ACE_packingBandage"),
+				//LIST_5("ACE_quikclot"),
+				LIST_4("ACE_tourniquet"),
+				LIST_2("ACE_epinephrine"),
+				LIST_2("ACE_morphine"),
+				LIST_2("ACE_splint"),
+				//LIST_2("ACE_bloodIV"),
+			#endif
+		#else
+			LIST_3("FirstAidKit"),
+		#endif
+		LIST_2("HandGrenade"),
+		LIST_2("SmokeShell")
+	};
+};
+
+// RATS SF Respawn
+class sfrespawn : r {
+	displayName = "SF Rifle RAT";
+	silencer[] = {
+		"CUP_muzzle_snds_SCAR_L"
+	};
+	headgear[] = {
+		"H_HelmetB_camo"
+	};
+	goggles[] =
+	{
+		"CUP_G_ESS_BLK_Facewrap_Black"
+	};
+	magazines[] = {
+		LIST_12("CUP_30Rnd_556x45_Emag"),
+		LIST_2("tsp_flashbang_cts"),
+		LIST_2("SmokeShellBlue"),
+		LIST_3("greenmag_ammo_556x45_basic_60Rnd"),
+		"HandGrenade",
+		"CUP_12Rnd_45ACP_mk23"
+	};
+	vest[] = {
+		//"rhsusf_plateframe_rifleman"
+		"CUP_V_B_Ciras_Khaki3"
+	};
+	backpack[] = {
+		"G2_Gunslinger"
+	};
+	sidearmWeapon[] = {
+		"CUP_hgun_Mk23"
+	};
+	sidearmAttachments[] = {
+		"cup_acc_mk23_lam_f",
+		"cup_muzzle_snds_mk23",
+	};
+	items[] += {
+		"ACE_CableTie",
+		"ACE_IR_Strobe_Item"
+	};
+};
+
 // RATS Automatic Rifle Slot
 class ar : basetrooper
 {
@@ -248,7 +334,7 @@ class ar : basetrooper
 	magazines[] +=
 	{
 		LIST_2("tsp_flashbang_m84"),
-		"SmokeShellRed",
+		"mjb_SmokeShellLightBlue",
 		"CUP_15Rnd_9x19_M9",
 		#if __has_include("\z\ace\addons\medical_engine\script_component.hpp")
 			#if __has_include("\z\ace\addons\nomedical\script_component.hpp")
@@ -276,8 +362,8 @@ class ar : basetrooper
 		#else
 			LIST_3("FirstAidKit"),
 		#endif
-		LIST_4("CUP_100Rnd_TE4_Yellow_Tracer_556x45_M249")
-		//LIST_3("greenmag_beltlinked_556x45_basic_200")
+		LIST_4("CUP_100Rnd_TE4_Yellow_Tracer_556x45_M249"),
+		LIST_3("greenmag_beltlinked_556x45_basic_200")
 	};
 };
 
@@ -325,16 +411,13 @@ class mmg : ar
 	{
 		"CUP_lmg_Mk48"
 	};
-	scope[] = {
-		"CUP_optic_HensoldtZO_low_RDS" //?
-	};
 	silencer[] = {
 		"ACE_muzzle_mzls_B"
 	};
 	magazines[] =
 	{
 		LIST_2("tsp_flashbang_m84"),
-		"SmokeShellRed",
+		"mjb_SmokeShellLightBlue",
 		LIST_3("greenmag_beltlinked_762x51_basic_200"),
 		"CUP_15Rnd_9x19_M9"
 	};
@@ -421,7 +504,7 @@ class sniper : basetrooper
 	};
 	backpackItems[] += {
 		"ACE_Tripod",
-		LIST_4("ACE_10Rnd_127x99_API_Mag")
+		LIST_3("ACE_10Rnd_127x99_API_Mag")
 	};
 };
 
@@ -460,7 +543,7 @@ class tl : r
 	magazines[] = {
 		LIST_2("tsp_flashbang_m84"),
 		LIST_2("greenmag_ammo_556x45_basic_60Rnd"),
-		"SmokeShellRed",
+		"mjb_SmokeShellLightBlue",
 		"SmokeShellBlue",
 		"CUP_15Rnd_9x19_M9",
 		LIST_10("CUP_30Rnd_556x45_Emag_Tracer_Yellow")
@@ -544,8 +627,8 @@ class cls : r
 			"Medikit",
 		#endif
 		LIST_1("SmokeShell"),
-		LIST_2("SmokeShellBlue"),
-		LIST_2("SmokeShellPurple")
+		LIST_2("mjb_SmokeShellLightBlue"),
+		LIST_2("mjb_SmokeShellPink")
 	};
 };
 
@@ -617,6 +700,28 @@ class amat : r
 		#endif
 		LIST_3("greenmag_ammo_556x45_basic_60Rnd"),
 		LIST_4("MRAWS_HEAT_F")
+	};
+};
+
+// RATS Weapons Team Leader
+class wpntl : tl {
+	displayName = "Weapons Team Leader";
+	backpack[] = {
+		"B_Carryall_cbr"
+	};
+	backpackItems[] = {
+		#if __has_include("\z\ace\addons\medical_engine\script_component.hpp")
+			#if __has_include("\z\ace\addons\nomedical\script_component.hpp")
+				LIST_3("FirstAidKit"),
+			#else
+			#endif
+		#else
+			LIST_3("FirstAidKit"),
+		#endif
+		LIST_21("1Rnd_HE_Grenade_shell"),
+		LIST_2("1Rnd_Smoke_Grenade_shell"),
+		LIST_4("CUP_30Rnd_556x45_Emag_Tracer_Yellow"),
+		LIST_3("MRAWS_HEAT_F")
 	};
 };
 
@@ -751,7 +856,7 @@ class amrt : r
 class sfsl : sl
 {
 	displayName = "SF Team Leader";
-	attachment[] += {
+	silencer[] = {
 		"CUP_muzzle_snds_SCAR_L"
 	};
 	headgear[] = {
@@ -775,8 +880,8 @@ class sfsl : sl
 		"cup_muzzle_snds_mk23",
 	};
 	items[] += {
-		LIST_3("ACE_CableTie"),
-		LIST_2("ACE_IR_Strobe_Item"),
+		"ACE_CableTie",
+		"ACE_IR_Strobe_Item",
 		"Laserbatteries"
 	};
 	magazines[] = {
@@ -832,8 +937,8 @@ class sfmed : cls
 	magazines[] = {
 		LIST_5("CUP_20Rnd_B_AA12_Slug"),
 		LIST_3("greenmag_ammo_12G_basic_24Rnd"),
-		"SmokeShellBlue",
-		LIST_2("SmokeShellRed"),
+		"mjb_SmokeShellLightBlue",
+		LIST_2("mjb_SmokeShellPink"),
 		LIST_2("tsp_flashbang_cts"),
 		#if __has_include("\z\ace\addons\medical_engine\script_component.hpp")
 			#if __has_include("\z\ace\addons\nomedical\script_component.hpp")
@@ -874,8 +979,8 @@ class sfmed : cls
 			"Medikit",
 		#endif
 		LIST_2("SmokeShell"),
-		LIST_2("SmokeShellBlue"),
-		LIST_1("SmokeShellPurple")
+		LIST_2("mjb_SmokeShellLightBlue"),
+		LIST_1("mjb_SmokeShellPink")
 	};
 };
 
@@ -883,7 +988,7 @@ class sfmed : cls
 class sfmat : mat
 {
 	displayName = "SF Antitank trooper";
-	attachment[] += {
+	silencer[] = {
 		"CUP_muzzle_snds_SCAR_L"
 	};
 	headgear[] = {
@@ -908,8 +1013,8 @@ class sfmat : mat
 		"cup_muzzle_snds_mk23",
 	};
 	items[] += {
-		LIST_3("ACE_CableTie"),
-		LIST_2("ACE_IR_Strobe_Item")
+		"ACE_CableTie",
+		"ACE_IR_Strobe_Item"
 	};
 	magazines[] = {
 		LIST_12("CUP_30Rnd_556x45_Emag"),
@@ -989,7 +1094,7 @@ class sfar : ar
 // RATS Special Forces Sharpshooter
 class sfdmr : spotter {
 	displayName = "SF Sharpshooter";
-	attachment[] += {
+	silencer[] = {
 		"CUP_muzzle_snds_SCAR_L"
 	};
 	headgear[] = {
@@ -1014,15 +1119,15 @@ class sfdmr : spotter {
 		"cup_muzzle_snds_mk23",
 	};
 	items[] += {
-		LIST_3("ACE_CableTie"),
-		LIST_2("ACE_IR_Strobe_Item")
+		"ACE_CableTie",
+		"ACE_IR_Strobe_Item"
 	};
 };
 
 // RATS Special Forces Ammo Bearer
 class sfaar : aar {
 	displayName = "SF Ammo Bearer";
-	attachment[] += {
+	silencer[] = {
 		"CUP_muzzle_snds_SCAR_L"
 	};
 	headgear[] = {
@@ -1039,6 +1144,14 @@ class sfaar : aar {
 	backpack[] = {
 		"G2_Gunslinger"
 	};
+	magazines[] = {
+		LIST_12("CUP_30Rnd_556x45_Emag"),
+		LIST_2("tsp_flashbang_cts"),
+		LIST_2("SmokeShellBlue"),
+		LIST_3("greenmag_ammo_556x45_basic_60Rnd"),
+		"HandGrenade",
+		"CUP_12Rnd_45ACP_mk23"
+	};
 	sidearmWeapon[] = {
 		"CUP_hgun_Mk23"
 	};
@@ -1047,8 +1160,8 @@ class sfaar : aar {
 		"cup_muzzle_snds_mk23",
 	};
 	items[] += {
-		LIST_3("ACE_CableTie"),
-		LIST_2("ACE_IR_Strobe_Item")
+		"ACE_CableTie",
+		"ACE_IR_Strobe_Item"
 	};
 	backpackItems[] =
 	{
@@ -1172,7 +1285,7 @@ class crew : basetrooper
 	};
 	magazines[] += {
 		LIST_2("tsp_flashbang_m84"),
-		"SmokeShellRed",
+		"mjb_SmokeShellLightBlue",
 		"CUP_15Rnd_9x19_M9",
 		LIST_2("CUP_30Rnd_556x45_PMAG_BLACK_PULL")
 	};

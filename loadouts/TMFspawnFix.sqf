@@ -25,7 +25,11 @@ waitUntil {sleep 8; !(isNil {_check = (isPlayer _player); _check}) && {_check}};
     };
     call babe_em_fnc_init;
 	if (player isEqualTo tmf_localrespawnedunit) then {
-		[false] call mjb_arsenal_fnc_arsenal;
+		if (missionNamespace getVariable ['mjb_arsenal_active',false]) then {
+			[false] call mjb_arsenal_fnc_arsenal;
+		} else {
+			if (!isNil 'arsenal') then { 0 = execVM 'loadouts\arsenal.sqf'; };
+		};
         player call diw_armor_plates_main_fnc_addPlayerHoldActions;
         [] call mjb_arsenal_fnc_initStuff;
         [] call mjb_perks_fnc_initStuff;
@@ -37,6 +41,17 @@ waitUntil {sleep 8; !(isNil {_check = (isPlayer _player); _check}) && {_check}};
 		};
 		if !(isNil "mjb_persistenceActive") then {
 			[player, mjb_deleteOnDeath, mjb_pLoadName, mjb_profOverride] call mjb_arsenal_fnc_initPersistentLoadout;
+		};
+		[player,acre_sys_radio_defaultRadio,true] call cba_fnc_addItem;
+		if (tsp_cba_animate_sling) then {
+			{[player, _x] call tsp_fnc_animate_sling_actions} forEach tsp_slings;
+			player addEventHandler ["Respawn", {{[player, _x] call tsp_fnc_animate_sling_actions} forEach tsp_slings}];
+			player addEventhandler ["Take", {[player] call tsp_fnc_animate_sling}];
+			player addEventhandler ["Put", {[player] call tsp_fnc_animate_sling}];
+		};
+
+		if (tsp_cba_breach) then {
+			player addEventHandler ["FiredMan", {params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo"]; [_unit, _ammo] spawn tsp_fnc_breach_gun}];
 		};
     };
 }] remoteExec ["call", _player];
